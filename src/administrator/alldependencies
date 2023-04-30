@@ -1,0 +1,41 @@
+npm install @mui/icons-material --force
+
+npm install @mui/material @emotion/react @emotion/styled
+
+npm install @mui/styles --force
+
+ npm i node-localstorage
+
+ npm i cors
+
+ npm i axion
+
+npm i 
+
+npm i uuid
+
+npm sweetalert2
+
+npm i @material-table/core
+
+npm install @mui/icons-material
+
+
+
+
+
+
+ for making the node project = express quickshoppeebackend --view=ejs
+ ===========================
+
+
+ for node dependencies===
+ ======================
+
+npm i
+
+npm i multer
+
+npm nodemon
+
+npm mysql

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { makeStyles } from "@mui/styles";
+import { Routes,BrowserRouter as Router,Route} from "react-router-dom";
+
+import DashboardInterface from "./administrator/adminLogin/DashboardInterface";
+import Home from "./userinterface/screens/home";
+import AdminLoginInterface from "./administrator/adminLogin/AdminLoginInterface";
+import SoftDrinkInterface from "./userinterface2/softdrinkComponent/SoftDrinkInterface"
+// import SoftDrinkItems from "./userinterface2/softdrinkcomponent2/SoftDrinkItems";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+    <Router>
+      <Routes>
+        <Route element={<DashboardInterface/>}  path="/DashboardInterface/*" />
+        <Route element={<Home />} path="/home/" />
+        <Route element={<AdminLoginInterface />} path="/adminlogininterface" />
+        <Route element={<SoftDrinkInterface />} path="/softdrinkinterface/*" />
+        {/* <Route element={<SoftDrinkItems />} path="/softdrinkitems/*" /> */}
+
+
+        
+
+      </Routes>
+    </Router>  
     </div>
   );
 }
